@@ -1,0 +1,7 @@
+numpy
+opencv-python
+aiohttp
+aiofiles
+pandas
+matplotlib
+scipy

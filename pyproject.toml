@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "makarovyam_6302_metetl"
+version = "0.1.0"
+description = "Metropolitan Museum Art Tool"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+    "opencv-python",
+    "aiohttp",
+    "aiofiles",
+    "pandas",
+    "matplotlib",
+]
+
+[project.scripts]
+metetl = "metetl.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+metetl = ["*.json"]
